@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mai Lâm | Front-end Developer</title>
+    <meta name="description" content="">  
+	<meta name="author" content="Mai Lam">
+    <link rel="icon" href="/assets/img/3600932.png">
+
+    <!-- ======================= Icon ============================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- ======================= Font ============================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- ======================== CSS ============================= -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- ===================== Javascript ========================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body class="preloading">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="main">
+        <!-- ============= HOME PAGE ================-->
+        <section id="home">
+            <div id="particles-js"></div>
+                <div class="grid">
+                    <!-- HEADER -->
+                    <div id="header">
+                        <div class="header__navbar">
+                            <ul class="header__navbar-list text--uppercase">
+                                <li class="header__navbar-item">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#about">About</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#project">Projects</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER -->
+                    <div id="slider">
+                        <div class="slider__heading">
+                            <h1 class="slider__heading-name">
+                                <span class="slider__heading-hello">
+                                    Hello, I'm 
+                                </span>
+                                <span class="slider__heading-myname">
+                                    Mai Lam.
+                                </span>
+                                
+                            </h1>
+                            <h2 class="slider__heading-work">
+                                I’m a Front-end Developer.
+                            </h2>
+                        </div>
+
+                        <div class="slider__social">
+                            <a href="https://www.linkedin.com/in/mailam0201/" target="_blank" class="slider__social-link social-linkedin">
+                                <i class="social-link--icon fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/mailam2120" target="_blank" class="slider__social-link social-github">
+                                <i class="social-link--icon fab fa-github"></i>
+                            </a>
+                            <a href="https://www.facebook.com/mailam21/" target="_blank" class="slider__social-link social-facebook">
+                                <i class="social-link--icon fab fa-facebook"></i>
+                            </a>
+                            <a href="mailto: mailam2120@gmail.com" class="slider__social-link social-email">
+                                <i class="social-link--icon fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="slider__scroll">
+                            <a href="#about" class="slider__scroll-button">
+                                <i class="slider__scroll-mouse uil uil-mouse-alt"></i>
+                                <span class="slider__scroll-text">
+                                    More about me
+                                </span>
+                                <i class="slider__scroll-arrow uil uil-arrow-down"></i>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            
+        </section>
+
+        <!-- ============= ABOUT ================-->
+        <section id="about">
+            <div class="grid">
+                <div class="row">
+                    <div class="about__wrap">
+                        <h3 class="heading text--uppercase">About me</h3>
+                        <div class="about__information">
+                            <div class="about__information-avt grid__column-2">
+                                <img src="/assets/img/avt.jpg" alt="Avatar">
+                            </div>
+                            <div class="about__information-summary grid__column-5">
+                                <p>I am a Front-End developer based in Ho Chi Minh City, Viet Nam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <a href="" class="btn button__downloadcv">
+                                    <i class="fas fa-download"></i>
+                                    My CV
+                                </a>
+                            </div>
+                            <div class="about__information-skill grid__column-5">
+                                <div class="skill-item">
+                                    <!-- <div class="skill-line"></div> -->
+                                    <h5 class="skill-title">
+                                        Programming languages
+                                    </h5>
+                                    <p class="skill-content">
+                                        HTML, CSS, JavaScript
+                                    </p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-line"></div>
+                                    <h5 class="skill-title">
+                                        Frameworks & platforms
+                                    </h5>
+                                    <p class="skill-content">
+                                        ReactJS
+                                    </p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-line"></div>
+                                    <h5 class="skill-title">
+                                        Database
+                                    </h5>
+                                    <p class="skill-content">
+                                        Microsoft SQL, MySQL
+                                    </p>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-line"></div>
+                                    <h5 class="skill-title">
+                                        Design
+                                    </h5>
+                                    <p class="skill-content">
+                                        Adobe photoshop, UI Design (Figma)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+         <!-- ============= Experience ================-->
+        <section id="experience">
+            <div class="grid">
+                <div class="experience__wrap">
+                    <h3 class="heading text--uppercase">Experience & Education</h3>
+                    
+                    <div class="experience__content">
+                        <div class="experience-line__wrap">
+                            <i class="experience-icon fas fa-graduation-cap"></i>
+                            <div class="experience-line"></div>
+                        </div>
+                        
+    
+    
+                        <div class="experience__item">
+                            <p class="experience__item-time">
+                                2018 - Now
+                            </p>
+                            <h5 class="experience__item-title">
+                                Information Technology
+                            </h5>
+                            <p class="experience__item-content">
+                                Ho Chi Minh City Open University 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= PROJECTS ================-->
+        <section id="project">
+            <div class="grid">
+                <h3 class="heading text--uppercase">Projects</h3>
+                <h5 class="sub-heading">
+                    Some Things I’ve Built
+                </h5>
+            </div>
+        </section>
+
+        <!-- ============= CONTACT ================-->
+        <section id="contact">
+            <div class="grid">
+                <h3 class="heading text--uppercase">Contact</h3>
+                <h5 class="sub-heading">For any enquiries, or just to say hello, get in touch and contact me.</h5>
+
+                <div class="contact-item__wrap">
+                    <div class="contact-item grid__column-4">
+                        <i class="contact-item-icon contact-item-icon-email uil uil-envelope-alt"></i>
+                        <a href="mailto:mailam2120@gmail.com" class="contact-item-text">mailam2120@gmail.com</a>
+                    </div>
+                    <div class="contact-item grid__column-4">
+                        <i class="contact-item-icon contact-item-icon-phone uil uil-phone-alt"></i>
+                        <a href="tel:+841537154" class="contact-item-text">098 153 7154</a>
+                    </div>
+                    <div class="contact-item grid__column-4">
+                        <i class="contact-item-icon contact-item-icon-location uil uil-user-location"></i>
+                        <span class="contact-item-text">Ho Chi Minh City, Vietnam</span>
+                    </div>
+                </div>
+
+                <div class="contact-form__wrap">
+                    <div class="contact-form-left">
+                        <img src="./assets/img/img.png" alt="" class="contact-form-img">
+                    </div>
+
+                    <div class="contact__form">
+                        <form id="contactForm" action="https://formsubmit.co/mailam2120@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="grid__column-6">
+                                    <input type="text" name="name" id="nameInput" class="contact__form-input" required="" placeholder="Your Name*">
+                                </div>
+                                <div class="grid__column-6">
+                                    <input type="email" name="email" id="emailInput"  class="contact__form-input" required="" placeholder="Your Email*">
+                                </div>
+                            </div>
+<!--     
+                            <div class="grid__row">
+                                <div class="grid__full-width">
+                                    <input type="text" name="subject" class="contact__form-input" required="" placeholder="Subject*">
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="grid__full-width">
+                                    <textarea class="contact__form-input" name="message" id="messageInput" required="" placeholder="Your Message*"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="submit" class="btn btn-form-send formSend" target="_blank" form="contactForm">Send Message</button>
+                    </div>
+
+                    
+                </div>
+
+                
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer__inner">
+               <p>©2021 Designed & Developed by Mai Lam.</p>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    
+
+    
+
+    <script type="text/javascript" src="./assets/js/particles.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+    
+    <script>
+        $(window).load(function() {
+            $('.loading').delay(1000).fadeOut('fast', function() {
+                $('body').removeClass('preloading');
+            });
+        });
+    </script>
+    
+</body>
+</html>
