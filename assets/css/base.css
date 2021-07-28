@@ -47,7 +47,6 @@ time, mark, audio, video {
 html {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-    /* overflow-x:hidden; */
 
 }
 
@@ -244,28 +243,29 @@ a {
    * Dots Colors
    * Smarter targeting vs nth-of-type?
    */
+
   .loading span:nth-of-type(2) {
-    background: #ff7c7e;
+    background: #e15f41;
     animation-delay: 0.2s;
   }
   .loading span:nth-of-type(3) {
-    background: #ff8599;
+    background: #f8a5c2;
     animation-delay: 0.4s;
   }
   .loading span:nth-of-type(4) {
-    background: #ff8686;
+    background: #778beb;
     animation-delay: 0.6s;
   }
   .loading span:nth-of-type(5) {
-    background: #ffa690;
+    background: #63cdda;
     animation-delay: 0.8s;
   }
   .loading span:nth-of-type(6) {
-    background: #ffcbb7;
+    background: #f3a683;
     animation-delay: 1.0s;
   }
   .loading span:nth-of-type(7) {
-    background: #ffc6c6;
+    background: #f5cd79;
     animation-delay: 1.2s;
   }
   

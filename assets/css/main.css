@@ -1,10 +1,4 @@
 
-#main {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-
 #home {
   background-color: var(--background-color);
   color: var(--text-color-light);
