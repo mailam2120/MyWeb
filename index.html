@@ -16,16 +16,18 @@
     <!-- ======================= Font ============================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+    
     <!-- ======================== CSS ============================= -->
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+   
 
     <!-- ===================== Javascript ========================= -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body class="preloading">
+        <!-- ============= PRELOADIING ================-->
     <div class="loading">
         <span></span>
         <span></span>
@@ -74,18 +76,18 @@
                             </h1>
                             
                             <h2 class="slider__heading-work">
-                                I’m a Front-end Developer.
+                                I'm a Front-end Developer
                             </h2>
                         </div>
 
                         <div class="slider__social">
-                            <a href="https://www.linkedin.com/in/mailam0201/" target="_blank" class="slider__social-link social-linkedin">
+                            <a href="https://www.linkedin.com/in/mailam0201/" target="_blank" class="slider__social-link">
                                 <i class="social-link--icon fab fa-linkedin"></i>
                             </a>
-                            <a href="https://github.com/mailam2120" target="_blank" class="slider__social-link social-github">
+                            <a href="https://github.com/mailam2120" target="_blank" class="slider__social-link">
                                 <i class="social-link--icon fab fa-github"></i>
                             </a>
-                            <a href="https://www.facebook.com/mailam21/" target="_blank" class="slider__social-link social-facebook">
+                            <a href="https://www.facebook.com/mailam21/" target="_blank" class="slider__social-link">
                                 <i class="social-link--icon fab fa-facebook"></i>
                             </a>
                             <a href="mailto: mailam2120@gmail.com" class="slider__social-link social-email">
@@ -107,8 +109,8 @@
             
         </section>
 
-        <!-- ============= ABOUT ================-->
-        <section id="about">
+        <!-- ============= ABOUT ================-->    
+        <section id="about" class="reveal">
             <div class="grid">
                 <div class="row">
                     <div class="about__wrap">
@@ -118,7 +120,7 @@
                                 <img src="/assets/img/avt.jpg" alt="Avatar">
                             </div>
                             <div class="about__information-summary grid__column-5">
-                                <p>My name is Mai, I am a Front-end Developer. I have profound interest in website design, create smart user interface, developing web experiences & web applications.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <p>Hi, I'm Mai - a front-end developer. I have profound interest in website design, create smart user interface, developing web experiences & web applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                                 <a href="" class="btn button__downloadcv">
                                     <i class="fas fa-download"></i>
                                     My CV
@@ -149,7 +151,7 @@
                                         Database
                                     </h5>
                                     <p class="skill-content">
-                                        Microsoft SQL, MySQL
+                                        MySQL, Microsoft SQL
                                     </p>
                                 </div>
                                 <div class="skill-item">
@@ -158,7 +160,7 @@
                                         Design
                                     </h5>
                                     <p class="skill-content">
-                                        Adobe photoshop, UI Design (Figma)
+                                        Adobe photoshop, Figma (UI Design)
                                     </p>
                                 </div>
                             </div>
@@ -170,7 +172,7 @@
             </div>
         </section>
          <!-- ============= Experience ================-->
-        <section id="experience">
+        <section id="experience" class="reveal">
             <div class="grid">
                 <div class="experience__wrap">
                     <h3 class="heading text--uppercase">Experience & Education</h3>
@@ -200,17 +202,58 @@
         </section>
 
         <!-- ============= PROJECTS ================-->
-        <section id="project">
+        <section id="project" class="reveal">
             <div class="grid">
                 <h3 class="heading text--uppercase">Projects</h3>
                 <h5 class="sub-heading">
                     Some Things I’ve Built
                 </h5>
+                <div class="project__wrap">
+                    <div class="project-item row reveal">
+                        <div class="project-item__image grid__column-6">
+                            <img src="/assets/img/myweb.png" alt="" class="project-img">
+                        </div>
+                        <div class="project-item__info grid__column-6">
+                            <h3 class="project-name">My Portfolio Website</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                            <div class="project-link">
+                                <a href="" class=" btn project-link-github">View code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item row reveal">
+                        <div class="project-item__image grid__column-6">
+                            <img src="/assets/img/myweb.png" alt="" class="project-img">
+                        </div>
+                        <div class="project-item__info grid__column-6">
+                            <h3 class="project-name">My Portfolio</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            </p>
+                            <ul class="project-tech-list">
+                                <li class="tag">HTML</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">JavaScript</li>
+                            </ul>
+                            <div class="project-link">
+                                <a href="" class=" btn project-link-github">View code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- ============= CONTACT ================-->
-        <section id="contact">
+        <section id="contact" class="reveal">
             <div class="grid">
                 <h3 class="heading text--uppercase">Contact</h3>
                 <h5 class="sub-heading">For any enquiries, or just to say hello, get in touch and contact me.</h5>
@@ -232,7 +275,7 @@
 
                 <div class="contact-form__wrap">
                     <div class="contact-form-left">
-                        <img src="./assets/img/img.png" alt="" class="contact-form-img">
+                        <img src="./assets/img/developer.png" alt="" class="contact-form-img">
                     </div>
 
                     <div class="contact__form">
@@ -269,7 +312,7 @@
 
         <footer id="footer">
             <div class="footer__inner">
-               <p>©2021 Designed & Developed by Mai Lam.</p>
+               <p>©2021 Designed & Developed by Mai Lam<span class="heart"> ♥</span></p>
             </div>
         </footer>
     </div>
@@ -296,10 +339,35 @@
     <!-- LOADING -->
     <script>
         $(window).load(function() {
-            $('.loading').delay(1000).fadeOut('fast', function() {
+            $('.loading').delay(500).fadeOut('fast', function() {
                 $('body').removeClass('preloading');
             });
         });
+    </script>
+
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 100;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <script>
+         window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }; 
     </script>
 </body>
 </html>

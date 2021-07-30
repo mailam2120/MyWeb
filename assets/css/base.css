@@ -33,6 +33,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+    /* color: var(--text-color-dark); */
 }
 
 
@@ -40,7 +41,7 @@ time, mark, audio, video {
     box-sizing: inherit;
     transition: all .2s linear;
     font-size: 100%; /* 16px */
-    line-height: 1rem;  /* 16px */
+    line-height: 1.25rem;  /* 20px */
     font-family: 'Rubik', sans-serif;
 }
 
@@ -164,7 +165,7 @@ a {
 }
 
 /* * Animation */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -180,9 +181,20 @@ a {
     to {
         transform: scale(var(--growth-to));
     }
+} */
+
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2s ease;
 }
 
-
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 
 
@@ -204,12 +216,12 @@ a {
     color: var(--white-color);
     border: solid 1px var(--white-color);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: -4px;
 }
 
 .btn:hover {
-    transform: scale(1.025);
+    /* transform: scale(1.025); */
     box-shadow: inset 0 0 0 2px var(--primary-color);
     background: none;
     color: var(--primary-color);
