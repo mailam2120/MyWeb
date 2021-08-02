@@ -76,7 +76,7 @@
 
 .slider__heading {
   cursor: default;
-  margin-bottom: 120px;
+  margin-bottom: 10vh;
 }
 
 
@@ -165,6 +165,7 @@
 .slider__scroll {
   position: absolute;
   bottom: 100px;
+  /* margin-top: 200px; */
 }
 
 .slider__scroll-button {
@@ -231,7 +232,7 @@
 }
 
 .about__information-avt {
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .about__information-avt img {
@@ -242,7 +243,7 @@
 }
 
 .about__information-summary {
-  margin-left: 56px;
+  margin-left: 32px;
   border: 5px double var(--border-color);
   border-radius: 4px;
   padding: 1rem 1.5rem;
@@ -263,7 +264,7 @@
 }
 
 .about__information-skill {
-  margin-left: 56px;
+  margin-left: 20px;
 
 }
 
@@ -433,6 +434,8 @@
 .contact-item__wrap {
   display: flex;
   text-align: center;
+  justify-content: center;
+  margin: 0 80px;
 }
 
 .contact-item {
@@ -485,16 +488,16 @@
 
 
 .contact__form {
-  margin-right: 80px;
-  margin-left: 32px;
+  /* margin-right: 80px; */
+  margin-left: 32px; 
   width: 100%;
   position: relative;
 }
 
 .contact__form-input {
-  margin: 10px 30px;
+  margin-top: 32px;
   width: 100%;
-  padding: 12px 20px;
+  padding: 18px 20px;
   background-color:  #fffbfd;
   border: 2px solid var(--border-color);
   border-radius: 6px;
@@ -522,19 +525,15 @@ button:focus {
 .btn-form-send {
   width: 160px;
   height: 48px;
-  margin-top: 12px;
+  margin-top: 24px;
   position: absolute;
-  right: -32px;
+  right: 0px;
 }
 
-.contact-form-left {
-  margin-left: 40px;
-}
 
 .contact-form-img {
   opacity: 0.8;
   width: 480px;
-  margin-left: 16px;
 }
 
 
@@ -558,3 +557,239 @@ button:focus {
 
 
 
+
+/* * MOBILE & TABLET: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+    .slider__heading-name {
+      font-size: 32px;
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    .slider__heading-myname {
+      margin: 4px auto 0;
+      /* width: 144px; */
+    }
+
+    .slider__heading-work {
+      font-size: 16px;
+      margin-top: 0px;
+    }
+
+    .slider__social {
+      margin-bottom: 60px;
+    }
+
+    .slider__social-link {
+      margin: 0 8px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .slider__scroll-text {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+    
+    .slider__scroll-mouse {
+      display: none;
+    }
+
+    .slider__scroll-arrow {
+      font-size: 14px;
+    }
+
+    .about__information-avt {
+      display: flex;
+      margin: 0px;
+    }
+
+    .heading {
+      margin-bottom: 24px;
+      font-size: 22px;
+      padding-top: 24px
+    }
+
+    .sub-heading {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .about__wrap {
+      margin: 0 32px;
+      padding-bottom: 58px;
+    }
+    .about__information-avt img {
+      width: 180px;
+      margin: 0 auto
+    }
+
+    .about__information {
+      flex-wrap: wrap;
+    }
+
+    .about__information-summary {
+      margin: 16px 0 0 0;
+      padding: 12px 16px;
+    }
+
+    .about__information-summary p{
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 0px;
+
+    }
+
+    .button__downloadcv {
+      margin: 10px auto 0;
+    }
+
+    .about__information-skill {
+      margin-left: 0px;
+      margin-top: 16px;
+    }
+    .skill-item {
+      padding: 4px 0;
+      text-align: center;
+    }
+
+    .skill-line {
+      width: 100%;
+    }
+
+    .skill-title {
+      font-size: 16px;
+    }
+
+    .skill-content {
+      font-size: 16px;
+    }
+
+    .experience__content {
+      padding-left: 10%;
+    }
+
+    .experience__item-time {
+      font-size: 14px;
+    }
+    
+    .experience__item-title {
+      font-size: 16px;
+      white-space: nowrap;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+
+    .experience__item-content {
+      font-size: 16px;
+    }
+
+    .experience__wrap {
+      margin: 0 32px;
+      padding-bottom: 58px;
+    }
+
+    .project__wrap {
+      margin: 0 32px;
+    }
+
+    .project-img{
+      width: 100%;
+    }
+
+    .project-name {
+      font-size: 18px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .project-description {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: justify;
+      padding: 0 8px;
+
+    }
+
+    .project-item__info {
+      padding-left: 0px;
+    }
+
+    .project-tech-list {
+      justify-content: center;
+    }
+
+    .project-link {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact__wrap {
+      margin: 0 32px;
+    }
+
+    .contact-item__wrap {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .contact-item {
+      margin: 0px 30px 16px;
+      /* padding: 16px; */
+    }
+
+    .contact-item-text {
+      font-size: 16px;
+    }
+
+    .contact-form__wrap {
+      flex-direction: column;
+      
+      margin-top: 12px;
+    }
+
+    .contact-form-left {
+      margin-left: 0px;
+    }
+
+    .contact-form-img {
+      width: 334px;
+      margin-left: 0px;
+    }
+
+    .contact__form {
+      margin-left: 0;
+    }
+
+    #nameInput {
+      width: 100%;
+    }
+
+    .btn-form-send {
+      text-align: center;
+      width: 140px;
+      height: 40px;
+    }
+
+    .footer__inner {
+      font-size: 14px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+}
+
+
+/* * MOBILE: width < 740px */
+/* @media only screen and (max-width: 46.1875em) {
+    
+} */
+
+/* * TABLET: width >= 740px and width < 1024px */
+/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+        .wide {
+            width: 644px;
+        }
+} */
