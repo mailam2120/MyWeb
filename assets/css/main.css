@@ -553,6 +553,9 @@ button:focus {
 
 /* * MOBILE & TABLET: width < 1024px */
 @media only screen and (max-width: 63.9375em) {
+    body {
+      overflow-x: hidden;
+    }
     .slider__heading-name {
       font-size: 32px;
       letter-spacing: 2px;
@@ -772,9 +775,6 @@ button:focus {
       padding-top: 12px;
       padding-bottom: 12px;
     }
-
-    
-    
 }
 
 
@@ -791,6 +791,9 @@ button:focus {
 
 /* * MOBILE: width < 740px */
 @media only screen and (max-width: 46.1875em) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar-mobile {
     z-index: 1;
     display: block;
@@ -827,10 +830,8 @@ button:focus {
     transition: transform 0.5s ease-in;
     border-radius: 6px;
   }
+
   
-  body {
-    overflow-x: hidden;
-  }
 
   .header__navbar-item {
     margin-left: 0;
