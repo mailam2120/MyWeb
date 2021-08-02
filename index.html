@@ -46,8 +46,14 @@
                 <div class="grid wide">
                     <!-- HEADER -->
                     <div id="header">
+                        <div class="navbar-mobile">
+                            <i class="fas fa-bars"></i>
+                        </div>
                         <div class="header__navbar">
                             <ul class="header__navbar-list text--uppercase">
+                                <div class="navbar-mobile-close">
+                                    <i class="fas fa-times"></i>
+                                </div>
                                 <li class="header__navbar-item">
                                     <a href="#">Home</a>
                                 </li>
@@ -361,6 +367,34 @@
          window.onbeforeunload = function() {
             window.scrollTo(0, 0);
         }; 
+    </script>
+
+    <script>
+        const navSlide = () => {
+            const bars = document.querySelector('.navbar-mobile');
+            const navMenu = document.querySelector('.header__navbar-list');
+            const close = document.querySelector('.navbar-mobile-close');
+            const navLink = document.querySelectorAll('.header__navbar-item');
+
+            bars.addEventListener('click', () => {
+                navMenu.classList.toggle('nav-active')
+            });
+
+            close.addEventListener('click', () => {
+                navMenu.classList.remove('nav-active')
+            });
+
+
+            navLink.forEach(n => n.addEventListener('click', () => {
+                navMenu.classList.remove('nav-active')
+            }));
+
+
+
+
+           
+        }
+        navSlide();
     </script>
 </body>
 </html>
