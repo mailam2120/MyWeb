@@ -827,6 +827,10 @@ button:focus {
     transition: transform 0.5s ease-in;
     border-radius: 6px;
   }
+  
+  body {
+    overflow-x: hidden;
+  }
 
   .header__navbar-item {
     margin-left: 0;
