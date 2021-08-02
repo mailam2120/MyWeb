@@ -48,8 +48,9 @@ time, mark, audio, video {
 html {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-
+    overflow-x: hidden;
 }
+
 
 
 li, ul, ol {

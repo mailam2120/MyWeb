@@ -388,13 +388,17 @@
             navLink.forEach(n => n.addEventListener('click', () => {
                 navMenu.classList.remove('nav-active')
             }));
-
-
-
-
-           
         }
         navSlide();
     </script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollLeft() != 0) {
+                $(document).scrollLeft(0);
+            }
+        });
+    </script>
+
 </body>
 </html>
