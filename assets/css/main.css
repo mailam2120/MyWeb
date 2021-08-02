@@ -238,8 +238,9 @@
 .about__information-avt img {
   border-radius: 50%;
   padding: 4px;
-  /* border: solid 1px var(--primary-color); */
   width: 100%;
+
+  /* border: solid 1px var(--primary-color); */
 }
 
 .about__information-summary {
