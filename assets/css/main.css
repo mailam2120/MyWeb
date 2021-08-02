@@ -554,7 +554,6 @@ button:focus {
 /* * MOBILE & TABLET: width < 1024px */
 @media only screen and (max-width: 1023px) {
   html, body { 
-    position:relative;
     overflow-x: hidden; 
   }
 
@@ -794,8 +793,7 @@ button:focus {
 
 /* * MOBILE: width < 740px */
 @media only screen and (max-width: 46.1875em) {
-  html, body { 
-    position:relative;
+  html, body {
     overflow-x: hidden; 
   }
   
