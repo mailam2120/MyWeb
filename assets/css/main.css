@@ -552,8 +552,13 @@ button:focus {
 
 
 /* * MOBILE & TABLET: width < 1024px */
-@media only screen and (max-width: 63.9375em) {
-  html, body, #main { overflow-x: hidden; }
+@media only screen and (max-width: 1023px) {
+  html, body { 
+    position:relative;
+    overflow-x: hidden; 
+  }
+
+
     .slider__heading-name {
       font-size: 32px;
       letter-spacing: 2px;
@@ -789,7 +794,11 @@ button:focus {
 
 /* * MOBILE: width < 740px */
 @media only screen and (max-width: 46.1875em) {
-  html, body, #main { overflow-x: hidden; }
+  html, body { 
+    position:relative;
+    overflow-x: hidden; 
+  }
+  
   .navbar-mobile {
     z-index: 1;
     display: block;
