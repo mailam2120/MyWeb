@@ -823,13 +823,13 @@ button:focus {
   }
 
   .header__navbar-list {
-    position: absolute;
+    position: fixed;
     display: block;
     z-index: 1;
     right: 0;
     top: 0px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
