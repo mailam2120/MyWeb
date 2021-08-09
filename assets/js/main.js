@@ -1,12 +1,12 @@
 
 // SMOOTHSCROLL
-    const scroll = new SmoothScroll('.header__navbar a[href*="#"]', {
+    const scroll = new SmoothScroll('.header__navbar a[href*="#"] .slider__scroll-button', {
         speed: 800
-    });
+    }); 
 
 // LOADING 
     $(window).load(function() {
-        $('.loading').delay(500).fadeOut('fast', function() {
+        $('.loading').delay(800).fadeOut('fast', function() {
             $('body').removeClass('preloading');
         });
     });

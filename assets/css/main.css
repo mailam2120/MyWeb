@@ -2,8 +2,8 @@
   overflow-x: hidden;
 }
 #home {
-  background-color: var(--background-color);
-  color: var(--text-color-light);
+  background-color: var(--white-color);
+  color: var(--text-color-dark);
   height: 100vh;
   min-height: 500px;
 }
@@ -19,7 +19,7 @@
 /********* HEADER **********/
 
 #header {
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
 }
 
 .navbar-mobile,
@@ -46,8 +46,8 @@
 
 .header__navbar-item a {  
   font-size: 1rem;
-  font-weight: 300;
-  color: var(--text-color-light);
+  font-weight: 400;
+  color: var(--text-color-dark);
 }
 
 .header__navbar-item:first-child {
@@ -87,7 +87,7 @@
 
 .slider__heading-myname {
   position: relative;
-  color: var(--background-color);
+  color: var(--text-color-dark);
 
 }
 
@@ -139,8 +139,8 @@
 }
 
 .slider__social-link {
-  background-color: #333;
-  color: var(--text-color-light);
+  background-color: #fff1f1;
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,11 +150,12 @@
   position: relative;
   margin: 0 12px;
   
-  
 }
 
 .slider__social-link:hover {
   background-color: var(--primary-color);
+  color: var(--white-color);
+
 }
 
 .social-link--icon {
@@ -167,7 +168,7 @@
 }
 
 .slider__scroll-button {
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
   display: flex;
   align-items: center;
 }

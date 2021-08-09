@@ -233,7 +233,7 @@ a {
 .loading {
     width: 100%;
     height: 100vh;
-    background-color: var(--background-color);
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,12 +273,8 @@ a {
     animation-delay: 0.8s;
   }
   .loading span:nth-of-type(6) {
-    background: #f3a683;
-    animation-delay: 1.0s;
-  }
-  .loading span:nth-of-type(7) {
     background: #f5cd79;
-    animation-delay: 1.2s;
+    animation-delay: 1.0s;
   }
   
   /*

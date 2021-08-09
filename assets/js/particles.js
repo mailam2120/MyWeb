@@ -30,7 +30,7 @@ var pJS = function(tag_id, params){
         value: '#fff'
       },
       shape: {
-        type: 'circle',
+        type: 'circle, triangle',
         stroke: {
           width: 0,
           color: '#ff0000'
@@ -55,11 +55,11 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
-        value: 20,
+        value: 60,
         random: false,
         anim: {
           enable: false,
-          speed: 20,
+          speed: 60,
           size_min: 0,
           sync: false
         }
