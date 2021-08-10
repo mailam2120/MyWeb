@@ -1,7 +1,7 @@
 
 // SMOOTHSCROLL
-    const scroll = new SmoothScroll('.header__navbar a[href*="#"] .slider__scroll-button', {
-        speed: 800
+    const scroll = new SmoothScroll('.header__navbar a[href*="#"]', {
+        speed: 1500
     }); 
 
 // LOADING 
