@@ -5,14 +5,7 @@
     --text-color-dark: #333333;
     --text-color-light: #F2F2F2;
     --background-color:#191A1D;
-
-
-
     --border-color: #DBDBDB;
-    --header-height: 120px;
-    --navbar-height: 38px;
-    --header-main-height: calc(var(--header-height) - var(--navbar-height));
-
 }
 
 html, body, div, span, applet, object, iframe,
@@ -33,7 +26,6 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
-    /* color: var(--text-color-dark); */
 }
 
 
@@ -60,129 +52,9 @@ li, ul, ol {
 a {
     text-decoration: none;
 }
-
-/* *RESPONSIVE
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.grid.wide {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.grid__full-width {
-    width: 100%;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
-}
-
-.grid__column-2 {
-    width: 16.6667%;
-}
-
-.grid__column-5 {
-    width: 41.6667%;
-}
-
-
-.grid__column-4 {
-    width: 33.3333%;
-}
-
-.grid__column-6 {
-    width: 50%;
-} */
-
-
-/* * TABLET: width >= 740px */
-/* @media (min-width: 740px) {
-    .grid__row {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-} */
-
-/* * PC LOW RESOLUTION */
-/* @media (min-width: 1113px) {
-    .grid__row {
-        margin-left: -12px;
-        margin-right: -12px;
-    }
-} */
-
-
-/* * > PC LOW RESOLUTION */
-/* @media (min-width: 1024px) and (max-width: 1239px) {
-    .wide {
-        width: 984px;
-    }
-    .wide .row {
-        margin-left: -12px;
-        margin-right: -12px;
-    }
-} */
-
-
-
-
-
-
-/* * MOBILE & TABLET: width < 1024px */
-/* @media only screen and (max-width: 63.9375em) {
-    .grid__row {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-
-} */
-
-/* * MOBILE: width < 740px */
-/* @media only screen and (max-width: 46.1875em) {
-    
-} */
-
-/* * TABLET: width >= 740px and width < 1024px */
-/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-        .wide {
-            width: 644px;
-        }
-} */
-
-
-
-
-/* * UPPERCASE */
 .text--uppercase {
     text-transform: uppercase;
 }
-
-/* * Animation */
-/* @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes growth {
-    from {
-        transform: scale(var(--growth-form));
-    }
-    to {
-        transform: scale(var(--growth-to));
-    }
-} */
 
 
 .reveal {
@@ -196,11 +68,6 @@ a {
     transform: translateY(0px);
     opacity: 1;
 }
-
-
-
-
-
 
 
 
@@ -278,10 +145,7 @@ a {
     animation-delay: 1.0s;
   }
   
-  /*
-   * Animation keyframes
-   * Use transition opacity instead of keyframes?
-   */
+  /* * Animation keyframes */
   @keyframes loading {
     0% {
       opacity: 0;
