@@ -4,8 +4,22 @@
     --black-color: #000;
     --text-color-dark: #333333;
     --text-color-light: #F2F2F2;
-    --background-color:#191A1D;
     --border-color: #DBDBDB;
+    --background-color-1: #E3FDF5;
+    --background-color-2: #FFE6FA;
+    --background-main-color: #FFF;
+    --footer-bg-color: #ffe4e4;
+    --input-bg-color: ##fffbfd;
+}
+
+body.dark {
+  --text-color-dark: #F2F2F2;
+  --text-color-light: #333333;
+  --background-color-1: #013155;
+  --background-color-2: #01162E;
+  --background-main-color: #222831;
+  --footer-bg-color: #061e41;
+  --input-bg-color: #29303a;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -31,7 +45,6 @@ time, mark, audio, video {
 
 * {
     box-sizing: inherit;
-    transition: all .2s linear;
     font-size: 100%; /* 16px */
     line-height: 1.25rem;  /* 20px */
     font-family: 'Rubik', sans-serif;
@@ -43,6 +56,7 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
 
 
 
@@ -71,6 +85,79 @@ a {
 }
 
 
+/** Toggle */
+.day-night {
+  position: relative;
+  margin-left: 32px;
+}
+
+.toggle {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -3px;
+  left: -9px;
+}
+
+.toggle ~ .toggle-label {
+	background-color: #fff8e9;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+  width: 40px;
+	transform: scale(1.5);
+}
+
+.toggle ~ .toggle-label .toggle-ball {
+	background-color: #ffa36e;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 16px;
+  width: 16px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.toggle:checked + .toggle-label .toggle-ball {
+	transform: translateX(19px);
+  background-color: #111
+}
+
+.toggle:checked {
+  transform: translateX(28px);
+}
+
+.toggle:checked + .toggle-label {
+	background-color: #fff;
+
+}
+
+.toggle:checked + .toggle-ball {
+	
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+  font-size: 12px;
+}
+
+.fa-sun {
+	color: #f39c12;
+  font-size: 12px;
+
+}
+
+
 
 /* * BUTTON */
 .btn {
@@ -83,9 +170,9 @@ a {
     justify-content: space-evenly;
     background-color: var(--primary-color);
     color: var(--white-color);
-    border: solid 1px var(--white-color);
     font-size: 1rem;
     font-weight: 400;
+    border: none;
 }
 
 .btn:hover {
@@ -158,3 +245,5 @@ a {
       opacity: 1;
     }
   }
+
+

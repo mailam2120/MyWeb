@@ -63,6 +63,19 @@
     navSlide();
 
 
+
+
+// DARK THEME
+    toggle = document.getElementById('toggle');
+
+    toggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+    });
+    
+    
+
+
+    
 // FIX BUG SAFARI
     $(window).scroll(function () {
         if ($(document).scrollLeft() != 0) {

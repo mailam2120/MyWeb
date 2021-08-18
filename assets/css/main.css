@@ -1,11 +1,15 @@
+#main {
+  background-color: var(--background-main-color);
+}
 
 #home {
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, var(--background-color-1) 0%, var(--background-color-2) 100%);
   color: var(--text-color-dark);
   height: 100vh;
   min-height: 500px;
   position: relative;
 }
+
 
 
 #particles-js{
@@ -103,7 +107,7 @@
   width: 180px;
   border: 25px solid #f8a5c2;
   border-radius: 50%;
-  left: 50%;
+  left: 40%;
   top: -120px;
   animation: leftBounce 3s ease-in-out infinite;
 }
@@ -400,6 +404,7 @@ h3.heading {
   text-align: justify;
   font-weight: 300;
   letter-spacing: 0.75px;
+  color: var(--text-color-dark);
 
 }
 
@@ -421,11 +426,13 @@ h3.heading {
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 400;
+  color: var(--text-color-dark);
 }
 
 .skill-content {
   font-size: 1.25rem;
   font-weight: 300;
+  color: var(--text-color-dark);
 }
 
 .skill-line {
@@ -481,6 +488,7 @@ h3.heading {
 .experience__item-content {
   font-size: 1.25rem;
   font-weight: 300;
+  color: var(--text-color-dark);
 }
 
 .experience-icon {
@@ -529,7 +537,7 @@ h3.heading {
   line-height: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 300;
-
+  color: var(--text-color-dark);
 }
 
 .project-tech-list {
@@ -579,6 +587,7 @@ h3.heading {
 
 .contact-item__wrap {
   display: flex;
+  
   text-align: center;
   justify-content: center;
   margin: 0 80px;
@@ -592,10 +601,10 @@ h3.heading {
   text-align: center;
   padding: 32px;
   border-radius: 12px;
-  border: 1px solid #eee;
+  border: 1px solid rgb(223, 222, 222);
   box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
   margin: 0 40px;
-  background-color: #fffbfd;
+  background-color: var(--input-bg-color);
 }
 
 .contact-item a {
@@ -659,11 +668,14 @@ h3.heading {
   margin-top: 32px;
   width: 100%;
   padding: 18px 20px;
-  background-color:  #fffbfd;
+  background-color: var(--input-bg-color);
   border: 2px solid var(--border-color);
   border-radius: 6px;
   font-size: 1rem;
+}
 
+.contact__form-input::placeholder {
+  color: var(--text-color-dark);
 }
 
 #nameInput {
@@ -694,7 +706,6 @@ button:focus {
 
 
 .contact-form-img {
-  opacity: 0.8;
   width: 480px;
 }
 
@@ -703,7 +714,7 @@ button:focus {
 
 
 #footer {
- background-color: #ffe4e4;
+ background-color: var(--footer-bg-color);
 }
 
 
@@ -934,6 +945,7 @@ button:focus {
 
     .contact-item {
       margin: 0px 30px 16px;
+      flex-direction: column;
       /* padding: 16px; */
     }
 
@@ -1011,7 +1023,7 @@ button:focus {
     top: 20px;
     right: 20px;
     font-size: 1.6rem;
-    color: var(--text-color-light);
+    color: var(--white-color);
   }
 
   .header__navbar-list {
@@ -1029,6 +1041,7 @@ button:focus {
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index: 3;
   }
 
   .header__navbar-item {
@@ -1046,6 +1059,11 @@ button:focus {
 
   .nav-active {
     transform: translateX(0%);
+  }
+
+  .day-night {
+    margin-top: 32px;
+    margin-left: 0;
   }
 }
 
