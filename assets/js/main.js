@@ -1,6 +1,6 @@
 
 // SMOOTHSCROLL
-    const scroll = new SmoothScroll('.header__navbar a[href*="#"]', {
+    const scroll = new SmoothScroll('.header__navbar-vertical a[href*="#"]', {
         speed: 1500
     }); 
     const scroll2 = new SmoothScroll('.slider__scroll-button', {
@@ -61,6 +61,21 @@
         }));
     }
     navSlide();
+
+
+// Fixed Nav after scroll
+	// const navbarDefault = document.querySelector('.header__navbar');
+    // const homepage = document.querySelector('#home')
+	// const offsetY = homepage.height;
+
+    // const scrollMenu = () => {
+	// 	if ($(window).scrollTop() >= offsetY) {
+	// 		navbarDefault.classList.add('menu-fixed')
+	// 	} else {
+	// 		navbarDefault.classList.remove('menu-fixed')
+	// 	}
+	// }
+	// document.onscroll = scrollMenu;
 
 
 

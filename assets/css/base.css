@@ -7,9 +7,10 @@
     --border-color: #DBDBDB;
     --background-color-1: #E3FDF5;
     --background-color-2: #FFE6FA;
-    --background-main-color: #FFF;
+    --background-main-color: #f7f7f7;
     --footer-bg-color: #ffe4e4;
     --input-bg-color: ##fffbfd;
+    --icon-color: #606060;
 }
 
 body.dark {
@@ -20,6 +21,8 @@ body.dark {
   --background-main-color: #222831;
   --footer-bg-color: #061e41;
   --input-bg-color: #29303a;
+  --icon-color: #F2F2F2;
+
 }
 
 html, body, div, span, applet, object, iframe,
@@ -99,12 +102,14 @@ a {
   height: 22px;
   top: -3px;
   left: -9px;
+  cursor: pointer;
+
 }
 
 .toggle ~ .toggle-label {
 	background-color: #fff8e9;
 	border-radius: 50px;
-	cursor: pointer;
+	/* cursor: pointer; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

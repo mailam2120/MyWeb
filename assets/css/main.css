@@ -85,21 +85,42 @@
 }
 
 .effect-2 {
-  left: 3%;
-  bottom: 20%;
-  width: 40px;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  animation: topBounce 3s ease-in-out infinite;
 }
+
+.effect-2-1 {
+  width: 40px;
+  left: 3%;
+  bottom: 30%;
+  animation: topBounce 3s ease-in-out infinite;
+
+}
+
+.effect-2-2 {
+  width: 80px;
+  right: 26%;
+  bottom: 20%;
+  animation: leftBounce 3s ease-in-out infinite;
+
+}
+
 
 .effect-2 div {
   height: 4px;
   width: 4px;
-  background-color: #ff9c07;
   margin: 0 3px 8px;
   border-radius: 50%;
+}
+
+.effect-2-1 div {
+  background-color: #ff9c07;
+}
+
+.effect-2-2 div {
+  background-color: #6fe1e9;
 }
 
 .effect-3 {
@@ -131,22 +152,36 @@
 }
 
 .effect-5 {
-  height:60px;
-  width: 60px;
-  right:10%;
-  top: 30%;
+  height:64px;
+  width: 64px;
   display: flex;
   justify-content: space-between;
   border-radius: 50%;
   overflow: hidden;
   animation: spin 10s linear infinite;
+}
 
+.effect-5-1 {
+  right:10%;
+  top: 30%;
+}
+
+.effect-5-2 {
+  height:50px;
+  width: 50px;
+  left: 26%;
+  bottom: 10%;
 }
 
 .effect-5 div {
   width: 4px;
   background-color: #f5cd79;
   height:100%;
+}
+
+.effect-5-2 div {
+  background-color: #fac4c4;
+  width: 2px;
 }
 
 
@@ -1066,4 +1101,3 @@ button:focus {
     margin-left: 0;
   }
 }
-
