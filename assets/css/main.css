@@ -744,6 +744,10 @@ h3.heading {
   color: var(--text-color-dark);
 }
 
+.contact__form-input {
+  color: var(--text-color-dark);
+}
+
 #nameInput {
   width: 95%;
 }
