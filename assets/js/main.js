@@ -1,6 +1,6 @@
 
 // SMOOTHSCROLL
-    const scroll = new SmoothScroll('.header__navbar-vertical a[href*="#"]', {
+    const scroll = new SmoothScroll('.header__navbar a[href*="#"]', {
         speed: 1500
     }); 
     const scroll2 = new SmoothScroll('.slider__scroll-button', {
@@ -33,6 +33,28 @@
         }
     }
 
+// Highlight Nav Menu on scroll 
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll(".header__navbar-item");
+    window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+        }
+    });
+
+    navLi.forEach((li) => {
+        li.classList.remove("navbar-item--active");
+        if (li.classList.contains(current)) {
+        li.classList.add("navbar-item--active");
+        }
+    });
+    });
+
+
 
 // refresh to top 
     window.onbeforeunload = function() {
@@ -64,18 +86,18 @@
 
 
 // Fixed Nav after scroll
-	// const navbarDefault = document.querySelector('.header__navbar');
-    // const homepage = document.querySelector('#home')
-	// const offsetY = homepage.height;
+    $(document).ready(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() > $(window).height()) { 
+            $('#header').addClass('navbar-fixed');
+        } else {
+            $('#header').removeClass('navbar-fixed');
+        }
+        });
+    });
 
-    // const scrollMenu = () => {
-	// 	if ($(window).scrollTop() >= offsetY) {
-	// 		navbarDefault.classList.add('menu-fixed')
-	// 	} else {
-	// 		navbarDefault.classList.remove('menu-fixed')
-	// 	}
-	// }
-	// document.onscroll = scrollMenu;
+
+
 
 
 
@@ -86,9 +108,6 @@
     toggle.addEventListener('change', () => {
         document.body.classList.toggle('dark');
     });
-    
-    
-
 
     
 // FIX BUG SAFARI

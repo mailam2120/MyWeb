@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
 :root {
     --primary-color: #FF5E61;
     --white-color: #fff;
@@ -11,17 +14,23 @@
     --footer-bg-color: #ffe4e4;
     --input-bg-color: ##fffbfd;
     --icon-color: #606060;
+    --header-color: #fff;
+    
 }
 
 body.dark {
+  --white-color: #000;
+  --black-color: #fff;
   --text-color-dark: #F2F2F2;
   --text-color-light: #333333;
   --background-color-1: #013155;
   --background-color-2: #01162E;
-  --background-main-color: #222831;
-  --footer-bg-color: #061e41;
+  --background-main-color: #282c36;
+  --footer-bg-color: #1e242e;
   --input-bg-color: #29303a;
   --icon-color: #F2F2F2;
+  --header-color: #343944;
+  
 
 }
 
@@ -50,12 +59,12 @@ time, mark, audio, video {
     box-sizing: inherit;
     font-size: 100%; /* 16px */
     line-height: 1.25rem;  /* 20px */
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -90,8 +99,10 @@ a {
 
 /** Toggle */
 .day-night {
-  position: relative;
-  margin-left: 32px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 5;
 }
 
 .toggle {
@@ -174,7 +185,7 @@ a {
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--primary-color);
-    color: var(--white-color);
+    color: white;
     font-size: 1rem;
     font-weight: 400;
     border: none;
