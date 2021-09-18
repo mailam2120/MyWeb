@@ -9,13 +9,13 @@
 
 // LOADING 
     $(window).load(function() {
-        $('.loading').delay(800).fadeOut('fast', function() {
+        $('.loading').delay(500).fadeOut('fast', function() {
             $('body').removeClass('preloading');
         });
     });
 
 
-// LOADING PAGE
+// LOADING SECTIONS
     window.addEventListener('scroll', reveal);
     function reveal() {
         var reveals = document.querySelectorAll('.reveal');
@@ -97,11 +97,6 @@
     });
 
 
-
-
-
-
-
 // DARK THEME
     toggle = document.getElementById('toggle');
 
@@ -116,3 +111,5 @@
             $(document).scrollLeft(0);
         }
     });
+
+

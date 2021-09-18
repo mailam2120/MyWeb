@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mai Lâm | Front-end Developer</title>
     <meta name="description" content="Mai Lâm">  
 	<meta name="author" content="Mai Lâm">
@@ -22,7 +22,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/grid.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/base.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
-   
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- ===================== Javascript ========================= -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -82,16 +84,16 @@
                                 <i class="fas fa-times"></i>
                             </div>
                             <li class="home header__navbar-item navbar-item--active ">
-                                <a href="#">Home</a>
+                                <a data-scroll href="#">Home</a>
                             </li>
                             <li class="about header__navbar-item">
-                                <a href="#about">About</a>
+                                <a data-scroll href="#about">About</a>
                             </li>
                             <li class="project header__navbar-item">
-                                <a href="#project">Projects</a>
+                                <a data-scroll href="#project">Projects</a>
                             </li>
                             <li class="contact header__navbar-item">
-                                <a href="#contact">Contact</a>
+                                <a data-scroll href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -133,7 +135,7 @@
                         </div>
                         
                         <div class="slider__scroll">
-                            <a href="#about" class="slider__scroll-button">
+                            <a data-scroll href="#about" class="slider__scroll-button">
                                 <i class="slider__scroll-mouse uil uil-mouse-alt"></i>
                                 <span class="slider__scroll-text">
                                     More about me
@@ -156,15 +158,16 @@
                             <div class="about__information-avt col l-2 c-12">
                                 <img src="./assets/img/avt.jpg" alt="Avatar">
                             </div>
-                            <div class="about__information-summary col l-5 c-12">
+                            <div class="about__information-summary col l-6 c-12">
                                 <h4 class="about__information-title"> Summary</h4>
-                                <p>Hi, My name is Mai. I’m currently studying in my final year of a Information Technology degree. I am passionate about frontend web development and user interface design. Now I am looking for Frontend Developer Intern opportunity to participate in projects, improve my skills and gain more experience.</p>
+                                <p>Hi, My name is <span class="primary-text">Mai</span>. I’m studying in my final year of a Information Technology degree. I am passionate about frontend web development and user interface design. I’m currently learning ReactJS and I have a basic understanding of Components, State, Props. <br/> 
+                                Now I am looking for <span class="primary-text">Frontend Developer Intern</span> opportunity to participate in projects, improve my skills and gain more experience.</p>
                                 <a href="" class="btn button__downloadcv">
                                     <i class="fas fa-download"></i>
                                     My CV
                                 </a>
                             </div>
-                            <div class="about__information-skill col l-5 c-12">
+                            <div class="about__information-skill col l-4 c-12">
                                 <h4 class="about__information-title">Skills</h4>
                                 <div class="skill-item">
                                     <!-- <div class="skill-line"></div> -->
@@ -172,16 +175,17 @@
                                         Programming languages
                                     </h5>
                                     <p class="skill-content">
-                                        HTML, CSS, JavaScript | Python, C# (basic)
+                                        HTML, CSS, JavaScript <br/> Python, C# (basic)
                                     </p>
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-line"></div>
                                     <h5 class="skill-title">
-                                        Frameworks & platforms
+                                        Frameworks & Libraries 
                                     </h5>
                                     <p class="skill-content">
-                                        ReactJS, Django
+                                        Bootstrap <br/> 
+                                        ReactJS, Django (basic)
                                     </p>
                                 </div>
                                 <div class="skill-item">
@@ -252,12 +256,12 @@
                         <div class="project-item__info col l-6 c-12">
                             <h3 class="project-name">My Portfolio Website</h3>
                             <p class="project-description">
-                                I built all the pages you're looking at now using HTML, CSS and JavaScript.
+                                I built the website you're looking at now using HTML, CSS and JavaScript.
                             </p>
                             <ul class="project-tech-list">
-                                <li class="tag">HTML</li>
-                                <li class="tag">CSS</li>
-                                <li class="tag">JavaScript</li>
+                                <li class="tag">#HTML</li>
+                                <li class="tag">#CSS</li>
+                                <li class="tag">#JavaScript</li>
                             </ul>
                             <div class="project-link">
                                 <a href="https://github.com/mailamdev/mailamdev.github.io" class=" btn project-link-github" target="_blank">View code</a>
@@ -272,14 +276,15 @@
                         <div class="project-item__info col l-6 c-12">
                             <h3 class="project-name">Shopee Store</h3>
                             <p class="project-description">
-                                I built this website after finishing the HTML/CSS basics course. Site is cloned design from shopee.vn.
+                                The product after I completed the HTML and CSS basics course.
                             </p>
                             <ul class="project-tech-list">
-                                <li class="tag">HTML</li>
-                                <li class="tag">CSS</li>
+                                <li class="tag">#HTML</li>
+                                <li class="tag">#CSS</li>
                             </ul>
                             <div class="project-link">
                                 <a href="https://github.com/mailam2120/ShopeeDemo" class=" btn project-link-github" target="_blank">View code</a>
+                                <a href="https://mailamdev.github.io/HTML-CSS_ShopeeDemo/" class=" btn project-link-github" target="_blank">View demo</a>
                             </div>
                         </div>
                     </div>
@@ -344,16 +349,13 @@
             </div>
         </footer>
     </div>
-
     
 
-    
 
-    
-
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+    </script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
-
+    
 
 </body>
 </html>
