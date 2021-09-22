@@ -1,10 +1,10 @@
 
 // SMOOTHSCROLL
-    const scroll = new SmoothScroll('.header__navbar a[href*="#"]', {
-        speed: 1500
+    var scroll = new SmoothScroll('.header__navbar a[href*="#"]', {
+        speed: 1000
     }); 
-    const scroll2 = new SmoothScroll('.slider__scroll-button', {
-        speed: 1500
+    var scroll2 = new SmoothScroll('.slider__scroll-button', {
+        speed: 1000
     }); 
 
 // LOADING 
