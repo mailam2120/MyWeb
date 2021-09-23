@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 
 :root {
     --primary-color: #FF5E61;
@@ -59,6 +61,7 @@ time, mark, audio, video {
     line-height: 1.25rem;  /* 20px */
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+
 }
 
 html {
@@ -183,42 +186,38 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: var(--primary-color); */
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white-color);
+    
     font-size: 1rem;
     font-weight: 400;
-    /* border: none; */
-
     border: 1px solid var(--primary-color);
-    box-shadow: inset 0 0 0 0 var(--primary-color);
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 var(--white-color);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
 
 .btn-secondary {
-  border: 1px solid #ffb4b5;
+  /* border: 1px solid #ffb4b5; */
+  color: var(--primary-color);
   background: var(--white-color);
-  color: var(--black-color);
+
 }
-
-
 
 
 .btn:hover {
-    /* transform: scale(1.025); */
-    /* box-shadow: inset 0 0 0 2px var(--primary-color); */
-    /* background: none; */
-    color: var(--white-color);
     cursor: pointer;
-    box-shadow: inset 400px 0 0 0 var(--primary-color);
+    /* box-shadow: inset 400px 0 0 0 var(--primary-color);
+    color: var(--white-color); */
+
 }
 
-.btn-secondary:hover {
-  background-color: #ec9a9b;
+/*  {
+  background-color: var(--primary-color);
   box-shadow: none;
   color: white;
-}
+} */
 
 .primary-text {
   color: var(--primary-color);
